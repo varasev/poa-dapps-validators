@@ -36,11 +36,11 @@ class App extends Component {
       hasData: false
     }
 
-    this.defaultValues = null;
-    this.setMetadata.call(this);
+    this.defaultValues = null
+    this.setMetadata.call(this)
 
-    this.isValidVotingKey = false;
-    this.setIsValidVotingKey.call(this);
+    this.isValidVotingKey = false
+    this.setIsValidVotingKey.call(this)
   }
   async setMetadata() {
     const currentData = await this.getMetadataContract().getValidatorData({
@@ -77,9 +77,9 @@ class App extends Component {
     })
   }
   async setIsValidVotingKey() {
-    this.isValidVotingKey = await this.getKeysManager().isVotingActive(this.getVotingKey());
+    this.isValidVotingKey = await this.getKeysManager().isVotingActive(this.getVotingKey())
     if (!this.isValidVotingKey) {
-      helpers.generateAlert("warning", "Warning!", messages.invalidaVotingKey);
+      helpers.generateAlert('warning', 'Warning!', messages.invalidaVotingKey)
     }
   }
   getKeysManager(){
@@ -203,9 +203,9 @@ class App extends Component {
   }
   render() {
     if (!this.isValidVotingKey) {
-      return null;
+      return null
     }
-    const BtnAction = this.state.hasData ? "Update" : "Set";
+    const BtnAction = this.state.hasData ? 'Update' : 'Set'
     const AutocompleteItem = ({ formattedSuggestion }) => (
       <div className="custom-container">
         <strong>{formattedSuggestion.mainText}</strong> <small>{formattedSuggestion.secondaryText}</small>

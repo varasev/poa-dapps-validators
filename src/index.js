@@ -122,10 +122,10 @@ class AppMainRouter extends Component {
   }
   checkForVotingKey(cb) {
     if (this.state.votingKey && !this.state.loading) {
-      return cb();
+      return cb()
     }
-    helpers.generateAlert("warning", "Warning!", messages.noMetamaskAccount);
-    return '';
+    helpers.generateAlert('warning', 'Warning!', messages.noMetamaskAccount)
+    return ''
   }
   onSetRender() {
     if (!this.state.netId) {
