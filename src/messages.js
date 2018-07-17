@@ -1,4 +1,4 @@
-let messages = {};
+let messages = {}
 messages.wrongRepo = function(repo) {
 	return `There is no such file in configured repo ${repo}`;
 };
@@ -9,4 +9,4 @@ Check POA Network <a href='https://github.com/poanetwork/wiki' target='blank'>wi
 
 module.exports = {
   messages
-};
+}
