@@ -82,8 +82,8 @@ class App extends Component {
       helpers.generateAlert('warning', 'Warning!', messages.invalidaVotingKey)
     }
   }
-  getKeysManager(){
-    return this.props.web3Config.keysManager;
+  getKeysManager() {
+    return this.props.web3Config.keysManager
   }
   getMetadataContract() {
     return this.props.web3Config.metadataContract

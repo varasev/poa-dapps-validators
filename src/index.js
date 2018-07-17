@@ -6,12 +6,8 @@ import KeysManager from './contracts/KeysManager.contract'
 import Metadata from './contracts/Metadata.contract'
 import getWeb3, { setWeb3 } from './getWeb3'
 import helpers from './helpers'
-import {messages} from './messages'
-import {
-  Router,
-  Route,
-  NavLink
-} from 'react-router-dom'
+import { messages } from './messages'
+import { Router, Route, NavLink } from 'react-router-dom'
 import createBrowserHistory from 'history/createBrowserHistory'
 import Loading from './Loading'
 import Footer from './Footer'
