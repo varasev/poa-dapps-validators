@@ -1,14 +1,6 @@
 import Web3 from 'web3'
-const POA_CORE = {
-  RPC_URL: 'https://core.poa.network',
-  netIdName: 'CORE',
-  netId: '99'
-}
-const POA_SOKOL = {
-  RPC_URL: 'https://sokol.poa.network',
-  netIdName: 'SOKOL',
-  netId: '77'
-}
+const POA_CORE = { RPC_URL: 'https://core.poa.network', netIdName: 'CORE', netId: '99' }
+const POA_SOKOL = { RPC_URL: 'https://sokol.poa.network', netIdName: 'SOKOL', netId: '77' }
 let getWeb3 = () => {
   return new Promise(function(resolve, reject) {
     // Wait for loading completion to avoid race conditions with web3 injection timing.
