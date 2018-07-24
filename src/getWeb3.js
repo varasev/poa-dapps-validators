@@ -35,12 +35,12 @@ let getWeb3 = () => {
               break
             default:
               netIdName = 'ERROR'
-              errorMsg = `You aren't connected to POA Network. 
-                  Please, switch to POA network and refresh the page. 
+              errorMsg = `You aren't connected to POA Network.
+                  Please, switch to POA network and refresh the page.
                   Check POA Network <a href='https://github.com/poanetwork/wiki' target='blank'>wiki</a> for more info.`
               console.log('This is an unknown network.', netId)
           }
-          document.title = `${netIdName} - POA validators dApp`
+          document.title = `${netIdName} - POA Validators dApp`
           var defaultAccount = web3.eth.defaultAccount || null
           if (errorMsg !== null) {
             reject({ message: errorMsg })
